@@ -1,5 +1,5 @@
 # Set User Default View
-Solution set user default view in Power Apps Model-Driven apps or Dynamics 365.
+Configure the default view for users in Power Apps Model-Driven apps or Dynamics 365.
 
 Read more: https://www.poweruser365.com/en
 
