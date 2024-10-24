@@ -1,6 +1,6 @@
 ﻿namespace xrmtoolbox_SetDefaultView
 {
-    partial class MyPluginControl
+    partial class SetUserDefaultViewControl
     {
         /// <summary> 
         /// Variable nécessaire au concepteur.
@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyPluginControl));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SetUserDefaultViewControl));
             this.toolStripMenu = new System.Windows.Forms.ToolStrip();
             this.tsbLoadEntities = new System.Windows.Forms.ToolStripButton();
             this.tssSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbSetDefaultView = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsbSyncUser = new System.Windows.Forms.ToolStripButton();
             this.listViewEntities = new System.Windows.Forms.ListView();
             this.displayName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.logicalName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -45,8 +47,6 @@
             this.email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tbSearchUser = new System.Windows.Forms.TextBox();
             this.lbSearchUser = new System.Windows.Forms.Label();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsbSyncUser = new System.Windows.Forms.ToolStripButton();
             this.gbEntities = new System.Windows.Forms.GroupBox();
             this.gbViews = new System.Windows.Forms.GroupBox();
             this.gbUsers = new System.Windows.Forms.GroupBox();
@@ -93,6 +93,20 @@
             this.tsbSetDefaultView.Size = new System.Drawing.Size(147, 28);
             this.tsbSetDefaultView.Text = "Set Default View";
             this.tsbSetDefaultView.Click += new System.EventHandler(this.tsb_SetDefaultView_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
+            // 
+            // tsbSyncUser
+            // 
+            this.tsbSyncUser.Image = ((System.Drawing.Image)(resources.GetObject("tsbSyncUser.Image")));
+            this.tsbSyncUser.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbSyncUser.Name = "tsbSyncUser";
+            this.tsbSyncUser.Size = new System.Drawing.Size(157, 28);
+            this.tsbSyncUser.Text = "Sync Entra ID User";
+            this.tsbSyncUser.Click += new System.EventHandler(this.tsbSyncUser_Click);
             // 
             // listViewEntities
             // 
@@ -205,20 +219,6 @@
             this.lbSearchUser.TabIndex = 12;
             this.lbSearchUser.Text = "Search";
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
-            // 
-            // tsbSyncUser
-            // 
-            this.tsbSyncUser.Image = ((System.Drawing.Image)(resources.GetObject("tsbSyncUser.Image")));
-            this.tsbSyncUser.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbSyncUser.Name = "tsbSyncUser";
-            this.tsbSyncUser.Size = new System.Drawing.Size(157, 28);
-            this.tsbSyncUser.Text = "Sync Entra ID User";
-            this.tsbSyncUser.Click += new System.EventHandler(this.tsbSyncUser_Click);
-            // 
             // gbEntities
             // 
             this.gbEntities.Controls.Add(this.listViewEntities);
@@ -264,7 +264,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MyPluginControl";
             this.Size = new System.Drawing.Size(2017, 1169);
-            this.Load += new System.EventHandler(this.MyPluginControl_Load);
+            this.Load += new System.EventHandler(this.SetUserDefaultViewControl_Load);
             this.toolStripMenu.ResumeLayout(false);
             this.toolStripMenu.PerformLayout();
             this.gbEntities.ResumeLayout(false);

@@ -25,7 +25,7 @@ namespace xrmtoolbox_SetDefaultView
     {
         public override IXrmToolBoxPluginControl GetControl()
         {
-            return new MyPluginControl();
+            return new SetUserDefaultViewControl();
         }
 
         /// <summary>

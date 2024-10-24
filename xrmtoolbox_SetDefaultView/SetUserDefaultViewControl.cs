@@ -25,7 +25,7 @@ using Microsoft.Crm.Sdk.Messages;
 
 namespace xrmtoolbox_SetDefaultView
 {
-    public partial class MyPluginControl : PluginControlBase
+    public partial class SetUserDefaultViewControl : PluginControlBase
     {
         private Settings SetUserDefaultViewSetting;
         private ListViewItem[] listViewItems;
@@ -35,12 +35,12 @@ namespace xrmtoolbox_SetDefaultView
         private List<string> checkedView;
         private List<string> checkedUsers;
         private string entitySelected;
-        public MyPluginControl()
+        public SetUserDefaultViewControl()
         {
             InitializeComponent();
         }
 
-        private void MyPluginControl_Load(object sender, EventArgs e)
+        private void SetUserDefaultViewControl_Load(object sender, EventArgs e)
         {
             ShowInfoNotification("This is a notification that can lead to XrmToolBox repository", new Uri("https://github.com/MscrmTools/XrmToolBox"));
 
