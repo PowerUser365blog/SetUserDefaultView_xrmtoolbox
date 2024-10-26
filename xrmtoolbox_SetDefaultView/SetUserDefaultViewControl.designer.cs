@@ -138,9 +138,9 @@
             // tbSearch
             // 
             this.tbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbSearch.Location = new System.Drawing.Point(78, 43);
+            this.tbSearch.Location = new System.Drawing.Point(117, 43);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(472, 22);
+            this.tbSearch.Size = new System.Drawing.Size(444, 22);
             this.tbSearch.TabIndex = 7;
             this.tbSearch.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
             // 
@@ -148,7 +148,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 43);
+            this.label1.Location = new System.Drawing.Point(33, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 16);
             this.label1.TabIndex = 8;
@@ -253,7 +253,7 @@
             this.gbUsers.TabStop = false;
             this.gbUsers.Text = "Users";
             // 
-            // MyPluginControl
+            // SetUserDefaultViewControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -262,7 +262,7 @@
             this.Controls.Add(this.gbViews);
             this.Controls.Add(this.gbUsers);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "MyPluginControl";
+            this.Name = "SetUserDefaultViewControl";
             this.Size = new System.Drawing.Size(2017, 1169);
             this.Load += new System.EventHandler(this.SetUserDefaultViewControl_Load);
             this.toolStripMenu.ResumeLayout(false);
